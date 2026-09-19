@@ -1,65 +1,152 @@
-<html>
-    <head>
-        <title>website pertamaku</title>
-        <style>
-            body {
-                background-color: lightblue;
-            }
-            h1{
-                color:blue;
-                text-align:center;
-                margin-top: 50px;
-                font-size: 30px;
-                font-family: arial;
-            }
-            p{
-                 font-size: 20px;
-                 color:black;
-                 text-align:center;
-                 margin: 20px auto;
-                 line-height: 1.5;
-            }
-            button{
-                font-size: 20px;
-                padding: 30px 50px;
-                border: 3px solid blue;
-                border-radius: 15px;
-                display: block;
-                margin: 20px auto;
-                width: 80%;
-                background-color: blue;
-                color: white;
-            }
-            button:active{
-                background-color: darkblue;
-            }
-            .container{
-             position: absolute;
-             top: 50%;
-             left: 50%;
-             transform: translate(-50%, -50%);
-            }
-                
-            .kotak{
-                width: 80px;
-                height: 80px;
-                border: 2px solid black;
-                margin: 5px;
-            }
-        </style>
-    </head>
-<body>
-     <h1>HALLO!</h1>
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
 
-    <p>INI ADALAH website PERTAMA KU</p>
+    <!-- Agar ukuran mengikuti layar HP -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <button onclick="sapa()">klik saya</button>
-<script>
-    function sapa () {
-        alert("halo! selamat datang di apk saya");
+    <title>Website Saya</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
         }
-</script>    <div class="container">
-    <div class="kotak">1</div>
-</div>
+
+        body {
+            margin: 0;
+            padding: 0;
+            background: #eeeeee;
+
+            /* Membuat desain berada di tengah laptop */
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+        }
+
+        /* Ukuran desain Canva */
+        .website {
+            position: relative;
+            width: 393px;
+            height: 853px;
+        }
+
+        /* Gambar desain Canva */
+        .desain {
+            width: 393px;
+            height: 853px;
+            display: block;
+        }
+
+        /* Tombol transparan */
+        .tombol {
+            position: absolute;
+            display: block;
+            cursor: pointer;
+
+            /* Untuk sementara transparan */
+            background: transparent;
+            border: navajowhite;
+        }
+
+        /* 1. TENTANG SAYA */
+        .tentang {
+            
+        }
+            .tentang {
+        left: 70px;
+         top: 400px;
+         width: 230px;
+         height: 50px;
+         background: transparent;
+         opacity: 0.5;
+}
+        /* 2. PORTOFOLIO */
+        .portofolio {
+            left: 72px;
+            top: 457px;
+            width: 249px;
+            height: 35px;
+        }
+
+        /* 3. WEBSITE */
+        .website-btn {
+            left: 72px;
+            top: 500px;
+            width: 249px;
+            height: 35px;
+        }
+
+        /* 4. TESTIMONI */
+        .testimoni {
+            left: 72px;
+            top: 543px;
+            width: 249px;
+            height: 35px;
+        }
+
+        /* 5. KONTAK SAYA */
+        .kontak {
+            left: 72px;
+            top: 585px;
+            width: 249px;
+            height: 35px;
+        }
+
+        /* Supaya nyaman di HP */
+        @media (max-width: 393px) {
+            body {
+                background: white;
+            }
+
+            .website {
+                transform: scale(calc(100vw / 393));
+                transform-origin: top left;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="website">
+
+        <!-- DESAIN CANVA -->
+        <img src="./desain..png" class="desain" alt="Desain website">
+
+        <!-- TOMBOL TRANSPARAN -->
+
+        <a
+            href="#"
+            class="tombol tentang"
+            onclick="alert('haii sayang!')">
+        </a>
+
+        <a
+            href="#"
+            class="tombol portofolio"
+            onclick="alert('apa kabar!')">
+        </a>
+
+        <a
+            href="#"
+            class="tombol website-btn"
+            onclick="alert('')">
+        </a>
+
+        <a
+            href="#"
+            class="tombol testimoni"
+            onclick="alert('Testimoni diklik!')">
+        </a>
+
+        <a
+            href="#"
+            class="tombol kontak"
+            onclick="alert('Kontak Saya diklik!')">
+        </a>
+
+    </div>
+
 </body>
-    </html>
+</html>
